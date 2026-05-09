@@ -5,214 +5,325 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <title>Hariharasudan R | Electrical & Electronic Engineer</title>
+  <title>Hariharasudan R | Embedded Systems & Engineering</title>
 </head>
-
 <body>
 
   <!-- NAVBAR -->
-  <nav>
-    <div class="left">
-      <a href="/">Hariharasudan R</a>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="#hero">Hariharasudan R.</a>
     </div>
-
-    <div class="right">
-
-      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"
-        rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-        <span>Github</span>
-      </a>
-
-      <a href="https://linkedin.com/in/YOUR_LINKEDIN_PROFILE" target="_blank"
-        rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        <span>LinkedIn</span>
-      </a>
-
-      <a href="mailto:yourmail@gmail.com">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Email</span>
-      </a>
-
+    <div class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#github-showcase">GitHub</a>
+      <a href="#contact" class="btn-primary-outline">Contact</a>
     </div>
   </nav>
 
   <main>
-
     <!-- SECTION 1: Hero -->
-    <section class="hero-section">
-      <div class="text">
-
-        <h2>Hi, I'm Hariharasudan R 👋</h2>
-
-        <p>
-          I am a final-year Electrical and Electronic Engineering undergraduate
-          at the University of Peradeniya with a strong interest in Embedded
-          Systems, Signal Processing, Edge AI, and Intelligent System Design.
-          I enjoy building practical engineering solutions that combine hardware
-          and software to solve real-world problems.
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <span class="subtitle">Final-Year Electrical & Electronic Engineering Undergraduate</span>
+        <h1>Hariharasudan R</h1>
+        
+        <p class="summary">
+          I am an engineering undergraduate specializing in <strong>Embedded Systems, Signal Processing, FPGA Design, Edge AI,</strong> and <strong>Real-time systems</strong>. I build intelligent system designs that bridge the gap between hardware architecture and high-performance software.
         </p>
+        
+        <div class="current-work">
+          <i class="fa-solid fa-microchip"></i>
+          <span><strong>Current Work:</strong> Real-Time Sound Source Localization for hearing assistance applications.</span>
+        </div>
 
-        <p>
-          My current work focuses on sound source localization systems for
-          hearing assistance applications, where I explore microphone arrays,
-          Time Difference of Arrival (TDoA) estimation, signal processing,
-          filtering techniques, and machine learning for spatial audio
-          perception and real-time implementation.
-        </p>
-
-        <div class="links">
-
-          <a href="#skills">
-            <i class="fa-solid fa-code"></i>
-            <span>Skills</span>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-diagram-project"></i> View Projects
           </a>
-
-          <a href="#project">
-            <i class="fa-solid fa-diagram-project"></i>
-            <span>Project</span>
+          <a href="https://github.com/HR-Hari" target="_blank" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
-
-          <a href="#contact">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
+          <a href="assets/resume/CV-Hariharasudan-R.pdf" target="_blank" class="btn btn-accent" download>
+            <i class="fa-solid fa-file-pdf"></i> Download Resume
           </a>
-
         </div>
       </div>
 
-      <div class="headshot">
-        <img src="images/hero-headshot.webp"
-          alt="Hariharasudan R headshot">
+      <div class="hero-image">
+        <img src="assets/images/hero-headshot.webp" alt="Hariharasudan R"> 
+        
       </div>
     </section>
 
     <!-- SECTION 2: Skills -->
     <section id="skills" class="skills-section">
-
-      <h2>Skills</h2>
-
-      <div class="text">
-        I work across both hardware and software domains, with experience in
-        embedded systems programming, signal processing, machine learning, and
-        engineering simulations. My technical interests include
-        microcontroller programming, sound localization, control systems,
-        embedded AI, and system-level engineering design.
+      <div class="section-header">
+        <h2>Technical Arsenal</h2>
+        <p>Hardware, software, and the tools that bring them together.</p>
       </div>
 
-      <div class="cells">
-
-        <div class="cell">
-          <img src="images/c-logo.webp" alt="C logo">
-          <span>C</span>
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span>C</span>
+            <span>Python</span>
+            <span>MATLAB / Octave</span>
+            <span>Verilog HDL</span>
+          </div>
         </div>
 
-        <div class="cell">
-          <img src="images/c++-logo.webp" alt="C++ logo">
-          <span>C++</span>
+        <!-- Embedded Systems -->
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-memory"></i> Embedded Systems</h3>
+          <div class="skill-tags">
+            <span>ESP32</span>
+            <span>ESP32-S3</span>
+            <span>ATmega328P</span>
+          </div>
         </div>
 
-        <div class="cell">
-          <img src="images/python-logo.webp" alt="Python logo">
-          <span>Python</span>
+        <!-- Tools -->
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+          <div class="skill-tags">
+            <span>Xilinx Vivado</span>
+            <span>KiCad</span>
+            <span>Git / GitHub</span>
+            <span>PSCad</span>
+            <span>Arduino IDE</span>
+            <span>Proteus</span>
+            <span>FreeCAD</span>
+          </div>
         </div>
 
-        <div class="cell">
-          <img src="images/matlab-logo.webp" alt="MATLAB logo">
-          <span>MATLAB / Octave</span>
+        <!-- Domains -->
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-globe"></i> Domains</h3>
+          <div class="skill-tags">
+            <span>Embedded Systems</span>
+            <span>Signal Processing</span>
+            <span>FPGA Design</span>
+            <span>Edge AI</span>
+            <span>PCB Design</span>
+            <span>Real-Time Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Projects -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h2>Engineering Projects</h2>
+        <p>A selection of my recent hardware and software builds.</p>
+      </div>
+
+      <div class="project-grid">
+        
+        <!-- Project 1: Featured -->
+        <div class="project-card featured">
+          <!--
+          <div class="project-image">
+            <img src="assets/images/projects/sound-localization.png" alt="Sound Source Localization">
+          </div>
+          -->
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Real-Time Sound Source Localization</h3>
+              <span class="badge">Featured</span>
+            </div>
+            <p>Developed a system to accurately localize and track sound sources in 2D using a microphone array, TDoA estimation, and camera-based visual cues for enhanced robustness in noisy environments.</p>
+            <div class="tech-stack">
+              <span>ESP32-S3</span>
+              <span>I2S</span>
+              <span>DSP</span>
+              <span>MATLAB</span>
+              <span>YOLOv8</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/HR-Hari/Real-Time-Sound-Source-Localization-with-Visual-Tracking-Integration.git" target="_blank" class="btn-icon">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="cell">
-          <img src="images/css-logo.webp" alt="CSS logo">
-          <span>CSS</span>
+        
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <!--
+          <div class="project-image">
+            <img src="assets/images/projects/apfc.png" alt="Auto Power Factor Correction">
+          </div>
+          -->
+          <div class="project-content">
+            <h3>Auto Power Factor Correction System</h3>
+            <p>Arduino-based APFC system for real-time monitoring and automatic correction of AC load power factor using voltage/current sensors and capacitor bank switching.</p>
+            <div class="tech-stack">
+              <span>Arduino</span>
+              <span>Sensors</span>
+              <span>Power Systems</span>
+              <span>Embedded C</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/HR-Hari/Auto-Power-Factor-Correction-System.git" target="_blank" class="btn-icon">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="cell">
-          <img src="images/html-logo.webp" alt="HTML logo">
-          <span>HTML</span>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <!--
+          <div class="project-image">
+            <img src="assets/images/projects/esp32-ai.png" alt="ESP32 AI Work">
+          </div>
+          -->
+          <div class="project-content">
+            <h3>ESP32 / Embedded AI Work</h3>
+            <p>Embedded AI and real-time firmware development using ESP32/ESP32-S3, sensor interfacing, DSP, and edge deployment.</p>
+            <div class="tech-stack">
+              <span>ESP32</span>
+              <span>Edge AI</span>
+              <span>DSP</span>
+              <span>Embedded Systems</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-icon">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <!--
+          <div class="project-image">
+            <img src="assets/images/projects/bike-safety.png" alt="Smart Bike Safety System">
+          </div>
+          -->
+          <div class="project-content">
+            <h3>Smart Bike Safety System</h3>
+            <p>Developed a master-slave embedded bike safety system for accident detection, theft prevention, GPS tracking, and emergency alerting.</p>
+            <div class="tech-stack">
+              <span>ESP32</span>
+              <span>GPS</span>
+              <span>GSM</span>
+              <span>Embedded Systems</span>
+              <span>KiCad</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/HR-Hari/Smart-Bike-Safety-System.git" target="_blank" class="btn-icon">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SECTION 3: Featured Project -->
-    <section id="project" class="testimony-section">
-
-      <h2>Featured Project</h2>
-
-      <div class="group">
-
-        <div class="person-details">
-          <img src="images/testimony-headshot.webp"
-            alt="Project Image">
-
-          <p>Sound Source Localization</p>
-          <p>Final Year Project</p>
-        </div>
-
-        <div class="text">
-          Developed an intelligent sound source localization system aimed at
-          assisting individuals with hearing impairments by identifying the
-          direction of incoming sound sources. The project utilizes microphone
-          arrays, Time Difference of Arrival (TDoA) estimation, signal
-          filtering, and machine learning techniques to improve localization
-          accuracy in noisy environments.
-          <br><br>
-          The system is designed for real-time implementation using embedded
-          platforms and focuses on improving spatial awareness in practical
-          environments.
-        </div>
-
+    <!-- SECTION 4: GitHub Showcase -->
+    <section id="github-showcase" class="github-showcase-section">
+      <div class="github-content">
+        <i class="fa-brands fa-github showcase-icon"></i>
+        <h2>Open Source & Engineering Work</h2>
+        <p>
+          I actively maintain repositories for my embedded systems, FPGA designs, and AI/Signal Processing projects. Check out my GitHub to explore the source code, hardware schematics, and detailed documentation behind my engineering builds.
+        </p>
+        <a href="https://github.com/HR-Hari" target="_blank" class="btn btn-github">
+          Visit My GitHub Profile <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </section>
 
-    <!-- SECTION 4: Contact -->
+    <!-- SECTION 5: Contact -->
     <section id="contact" class="contact-section">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Open for internships, engineering roles, and collaborative projects.</p>
+      </div>
 
-      <h2>Contact</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Colombo, Sri Lanka</p>
+            </div>
+          </div>
+          
+          <a href="mailto:hariharasudanravichandran@gmail.com" class="contact-card link-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>hariharasudanravichandran@gmail.com</p>
+            </div>
+          </a>
 
-      <div class="group">
+          <a href="https://www.linkedin.com/in/hariharasudan-ravichandran/" target="_blank" class="contact-card link-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/hariharasudan-ravichandran/</p>
+            </div>
+          </a>
 
-        <div class="text">
-          I am always open to discussing engineering projects, embedded
-          systems, research collaborations, and innovative technology ideas.
-          Whether it is signal processing, AI applications, embedded
-          development, or system-level design, feel free to connect with me.
+          <a href="https://github.com/HR-Hari" target="_blank" class="contact-card link-card">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/HR-Hari</p>
+            </div>
+          </a>
         </div>
 
-        <!-- Contact Form (Optional) -->
+        <!-- Contact Form (Commented Out for future use) -->
         <!--
-        <form>
-
-          <label for="name">Name</label>
-          <input type="text" id="name">
-
-          <label for="email">Email</label>
-          <input type="email" id="email">
-
-          <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
-
-          <button type="submit">Send Message</button>
-
+        <form class="contact-form">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe">
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com">
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="5" placeholder="Let's talk about..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
         -->
-
       </div>
     </section>
-
   </main>
+
+  <footer>
+    <p>&copy; 2024 Hariharasudan R. Built for engineering excellence.</p>
+  </footer>
 
 </body>
 </html>
